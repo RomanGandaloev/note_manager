@@ -1,11 +1,3 @@
-note = [
-    'user_name',
-    ['title0', 'title1', 'title2',],
-    'content',
-    'status',
-    'created_date',
-    'issue_date'
-]
 user_name = input('Введите свое имя: ')
 title0 = input('Введите первый заголовок заметки: ')
 title1 = input('Введите второй заголовок заметки: ')
@@ -14,4 +6,20 @@ content = input('Введите список выполняемых задач: 
 status = input('Подвердите статус выполнения: ')
 created_date = input('Введите дату начала работы (в формате ДД.ММ.ГГГГ): ')
 issue_date = input('Введите дату выполнения работы (в формате ДД.ММ.ГГГГ): ')
-print(note)
+note = [
+    user_name,
+    [title0, title1, title2,],
+    content,
+    status,
+    created_date,
+    issue_date
+]
+print('Имя пользователя: ', note[0])
+print('Заметка №1: ', note[1][0])
+print('Заметка №2: ', note[1][1])
+print('Заметка №3: ', note[1][2])
+print('Список выполняемых задач: ', note[2])
+print('Статус выполнения задачи: ', note[3])
+print('Дача начала выполнения задачи: ', note[4][0:5])
+print('Дача сдачи задачи: ', note[5][0:5])
+
